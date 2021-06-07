@@ -45,7 +45,14 @@ cd supabase-next
 npm install
 ```
 
-5. Update the environment variables located in __.env.local__ with the ones from your project.
+5. Create a file named __.env.local__ and update it with the values from your Supabase project:
+
+```
+NEXT_PUBLIC_SUPABASE_URL=https://app-id.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your-public-api-key
+```
+
+![App URLs](appurls.jpg)
 
 6. Run the server
 
