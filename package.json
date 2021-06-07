@@ -8,8 +8,20 @@
     "start": "next start"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^1.13.1",
+    "@supabase/ui": "^0.27.2",
+    "@tailwindcss/typography": "^0.4.1",
+    "easymde": "^2.15.0",
     "next": "10.2.3",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-markdown": "^6.0.2",
+    "react-simplemde-editor": "^5.0.1",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.6",
+    "postcss": "^8.3.0",
+    "tailwindcss": "^2.1.4"
   }
 }
