@@ -35,9 +35,10 @@ export async function getStaticProps ({ params }) {
     .from('posts')
     .select()
     .filter('id', 'eq', id)
+    .single()
   return {
     props: {
-      post: data[0]
+      post: data
     }
   }
 }

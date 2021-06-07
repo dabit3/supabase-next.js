@@ -20,7 +20,8 @@ function EditPost() {
         .from('posts')
         .select()
         .filter('id', 'eq', id)
-      setPost(data[0])
+        .single()
+      setPost(data)
     }
   }, [id])
   if (!post) return null

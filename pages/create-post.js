@@ -25,7 +25,8 @@ function CreatePost() {
       .insert([
           { title, content, user_id: user.id, user_email: user.email }
       ])
-    router.push(`/posts/${data[0].id}`)
+      .single()
+    router.push(`/posts/${data.id}`)
   }
   return (
     <div>
