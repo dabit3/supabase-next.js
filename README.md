@@ -1,5 +1,7 @@
 ## Full stack blog with Supabase and Next.js
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Fdabit3%2Fsupabase-next.js&env=NEXT_PUBLIC_SUPABASE_URL,NEXT_PUBLIC_SUPABASE_ANON_KEY&envDescription=API%20URL%20and%20API%20Key)
+
 To get started with this project, follow these steps.
 
 1. Create a new project in the [Supabase](https://supabase.io/) dashboard
