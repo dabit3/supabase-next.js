@@ -1,7 +1,5 @@
 ## Full stack blog with Supabase and Next.js
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Fdabit3%2Fsupabase-next.js&env=NEXT_PUBLIC_SUPABASE_URL,NEXT_PUBLIC_SUPABASE_ANON_KEY&envDescription=API%20URL%20and%20API%20Key)
-
 To get started with this project, follow these steps.
 
 1. Create a new project in the [Supabase](https://supabase.io/) dashboard
@@ -33,13 +31,21 @@ create policy "Posts are public." on posts for
     select using ( true );
 ```
 
-3. Clone this project
+## Run either locally or deploy to Vercel
+
+### Deploying to Vercel
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Fdabit3%2Fsupabase-next.js&env=NEXT_PUBLIC_SUPABASE_URL,NEXT_PUBLIC_SUPABASE_ANON_KEY&envDescription=API%20URL%20and%20API%20Key)
+
+### Running locally
+
+1. Clone this project
 
 ```sh
 git clone https://github.com/dabit3/supabase-next.js.git
 ```
 
-4. Change into the directory and install the dependencies
+2. Change into the directory and install the dependencies
 
 ```sh
 cd supabase-next
@@ -47,7 +53,7 @@ cd supabase-next
 npm install
 ```
 
-5. Create a file named __.env.local__ and update it with the values from your Supabase project:
+3. Create a file named __.env.local__ and update it with the values from your Supabase project:
 
 ```
 NEXT_PUBLIC_SUPABASE_URL=https://app-id.supabase.co
@@ -56,7 +62,7 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY=your-public-api-key
 
 ![App URLs](appurls.jpg)
 
-6. Run the server
+4. Run the server
 
 ```sh
 npm run dev
