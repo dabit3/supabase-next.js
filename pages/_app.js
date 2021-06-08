@@ -6,15 +6,13 @@ import '../styles/globals.css'
 function MyApp({ Component, pageProps }) {
   const [user, setUser] = useState(null);
   useEffect(() => {
-    const { data: authListener } = supabase.auth.onAuthStateChange(
-      async () => checkUser()
-    )
+    const { data: authListener } = supabase.auth.onAuthStateChange(checkUser)
     checkUser()
     return () => {
       authListener?.unsubscribe()
     };
   }, [])
-  async function checkUser() {
+  function checkUser() {
     const user = supabase.auth.user()
     setUser(user)
   }
