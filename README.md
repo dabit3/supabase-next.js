@@ -1,5 +1,7 @@
 ## Full stack blog with Supabase and Next.js
 
+This code goes along with the blog post __The Complete Guide to Full Stack Development with Supabase and Next.js__ published [here](https://www.freecodecamp.org/news/the-complete-guide-to-full-stack-development-with-supabas/)
+
 To get started with this project, follow these steps.
 
 1. Create a new project in the [Supabase](https://supabase.io/) dashboard
