@@ -36,7 +36,8 @@ function EditPost() {
       .from('posts')
       .update([
           { title, content }
-      ])
+       ])
+      .match({ id })
     router.push('/my-posts')
   }
   return (
