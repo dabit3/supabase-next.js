@@ -26,6 +26,7 @@ export default function Home() {
   }
   if (loading) return <p className="text-2xl">Loading ...</p>
   if (!posts.length) return <p className="text-2xl">No posts.</p>
+
   return (
     <div>
       <Head>
