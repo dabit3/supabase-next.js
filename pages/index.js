@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import Head from 'next/head'
 import Link from 'next/link'
 import { supabase } from '../api'
 
@@ -27,6 +28,10 @@ export default function Home() {
   if (!posts.length) return <p className="text-2xl">No posts.</p>
   return (
     <div>
+      <Head>
+        <title>Supablog</title>
+      </Head>
+
       <h1 className="text-3xl font-semibold tracking-wide mt-6 mb-2">Posts</h1>
       {
         posts.map(post => (
