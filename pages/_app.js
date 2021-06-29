@@ -20,24 +20,24 @@ function MyApp({ Component, pageProps }) {
   <div>
     <nav className="p-6 border-b border-gray-300">
       <Link href="/">
-        <span className="mr-6 cursor-pointer">Home</span>
+        <a className="m-6">Home</a>
       </Link>
       {
         user && (
           <Link href="/create-post">
-            <span className="mr-6 cursor-pointer">Create Post</span>
+            <a className="m-6">Create Post</a>
           </Link>
         )
       }
       {
         user && (
           <Link href="/my-posts">
-            <span className="mr-6 cursor-pointer">My Posts</span>
+            <a className="m-6">My Posts</a>
           </Link>
         )
       }
       <Link href="/profile">
-        <span className="mr-6 cursor-pointer">Profile</span>
+        <a className="m-6">Profile</a>
       </Link>
     </nav>
     <div className="py-8 px-16">
